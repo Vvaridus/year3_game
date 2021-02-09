@@ -35,6 +35,44 @@ CONFIGURATION = Debug
 include rules.ninja
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 2_INVADERS
+
+
+#############################################
+# Order-only phony target for 2_INVADERS
+
+build cmake_object_order_depends_target_2_INVADERS_Debug: phony || cmake_object_order_depends_target_sfml-graphics_Debug cmake_object_order_depends_target_sfml-system_Debug cmake_object_order_depends_target_sfml-window_Debug
+
+build CMakeFiles\2_INVADERS.dir\2_invaders\main.cpp.obj: CXX_COMPILER__2_INVADERS_Debug ..\..\..\2_invaders\main.cpp || cmake_object_order_depends_target_2_INVADERS_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++14
+  INCLUDES = -I..\..\..\lib\sfml\include
+  OBJECT_DIR = CMakeFiles\2_INVADERS.dir
+  OBJECT_FILE_DIR = CMakeFiles\2_INVADERS.dir\2_invaders
+  TARGET_COMPILE_PDB = CMakeFiles\2_INVADERS.dir\
+  TARGET_PDB = bin\2_INVADERS.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2_INVADERS
+
+
+#############################################
+# Link the executable bin\2_INVADERS.exe
+
+build bin\2_INVADERS.exe: CXX_EXECUTABLE_LINKER__2_INVADERS_Debug CMakeFiles\2_INVADERS.dir\2_invaders\main.cpp.obj | lib\sfml\lib\sfml-graphics-d.lib lib\sfml\lib\sfml-window-d.lib lib\sfml\lib\sfml-system-d.lib || bin\sfml-graphics-d-2.dll bin\sfml-system-d-2.dll bin\sfml-window-d-2.dll
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = lib\sfml\lib\sfml-graphics-d.lib  lib\sfml\lib\sfml-window-d.lib  lib\sfml\lib\sfml-system-d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_PATH = -LIBPATH:C:\Users\Vv\DOCUME~1\GitHub\YEAR3_~1\out\build\X64-DE~1\lib\sfml\lib
+  OBJECT_DIR = CMakeFiles\2_INVADERS.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\2_INVADERS.dir\
+  TARGET_FILE = bin\2_INVADERS.exe
+  TARGET_IMPLIB = 2_INVADERS.lib
+  TARGET_PDB = bin\2_INVADERS.pdb
+
+# =============================================================================
 # Object build statements for EXECUTABLE target PRACTICAL_1
 
 
@@ -51,11 +89,11 @@ build CMakeFiles\PRACTICAL_1.dir\practical_1\main.cpp.obj: CXX_COMPILER__PRACTIC
   TARGET_COMPILE_PDB = CMakeFiles\PRACTICAL_1.dir\
   TARGET_PDB = bin\PRACTICAL_1.pdb
 
-build CMakeFiles\PRACTICAL_1.dir\space_invader\main.cpp.obj: CXX_COMPILER__PRACTICAL_1_Debug ..\..\..\space_invader\main.cpp || cmake_object_order_depends_target_PRACTICAL_1_Debug
+build CMakeFiles\PRACTICAL_1.dir\2_invaders\main.cpp.obj: CXX_COMPILER__PRACTICAL_1_Debug ..\..\..\2_invaders\main.cpp || cmake_object_order_depends_target_PRACTICAL_1_Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++14
   INCLUDES = -I..\..\..\lib\sfml\include
   OBJECT_DIR = CMakeFiles\PRACTICAL_1.dir
-  OBJECT_FILE_DIR = CMakeFiles\PRACTICAL_1.dir\space_invader
+  OBJECT_FILE_DIR = CMakeFiles\PRACTICAL_1.dir\2_invaders
   TARGET_COMPILE_PDB = CMakeFiles\PRACTICAL_1.dir\
   TARGET_PDB = bin\PRACTICAL_1.pdb
 
@@ -67,7 +105,7 @@ build CMakeFiles\PRACTICAL_1.dir\space_invader\main.cpp.obj: CXX_COMPILER__PRACT
 #############################################
 # Link the executable bin\PRACTICAL_1.exe
 
-build bin\PRACTICAL_1.exe: CXX_EXECUTABLE_LINKER__PRACTICAL_1_Debug CMakeFiles\PRACTICAL_1.dir\practical_1\main.cpp.obj CMakeFiles\PRACTICAL_1.dir\space_invader\main.cpp.obj | lib\sfml\lib\sfml-graphics-d.lib lib\sfml\lib\sfml-window-d.lib lib\sfml\lib\sfml-system-d.lib || bin\sfml-graphics-d-2.dll bin\sfml-system-d-2.dll bin\sfml-window-d-2.dll
+build bin\PRACTICAL_1.exe: CXX_EXECUTABLE_LINKER__PRACTICAL_1_Debug CMakeFiles\PRACTICAL_1.dir\practical_1\main.cpp.obj CMakeFiles\PRACTICAL_1.dir\2_invaders\main.cpp.obj | lib\sfml\lib\sfml-graphics-d.lib lib\sfml\lib\sfml-window-d.lib lib\sfml\lib\sfml-system-d.lib || bin\sfml-graphics-d-2.dll bin\sfml-system-d-2.dll bin\sfml-window-d-2.dll
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = lib\sfml\lib\sfml-graphics-d.lib  lib\sfml\lib\sfml-window-d.lib  lib\sfml\lib\sfml-system-d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -79,44 +117,6 @@ build bin\PRACTICAL_1.exe: CXX_EXECUTABLE_LINKER__PRACTICAL_1_Debug CMakeFiles\P
   TARGET_FILE = bin\PRACTICAL_1.exe
   TARGET_IMPLIB = PRACTICAL_1.lib
   TARGET_PDB = bin\PRACTICAL_1.pdb
-
-# =============================================================================
-# Object build statements for EXECUTABLE target SPACE_INVADER
-
-
-#############################################
-# Order-only phony target for SPACE_INVADER
-
-build cmake_object_order_depends_target_SPACE_INVADER_Debug: phony || cmake_object_order_depends_target_sfml-graphics_Debug cmake_object_order_depends_target_sfml-system_Debug cmake_object_order_depends_target_sfml-window_Debug
-
-build CMakeFiles\SPACE_INVADER.dir\space_invader\main.cpp.obj: CXX_COMPILER__SPACE_INVADER_Debug ..\..\..\space_invader\main.cpp || cmake_object_order_depends_target_SPACE_INVADER_Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++14
-  INCLUDES = -I..\..\..\lib\sfml\include
-  OBJECT_DIR = CMakeFiles\SPACE_INVADER.dir
-  OBJECT_FILE_DIR = CMakeFiles\SPACE_INVADER.dir\space_invader
-  TARGET_COMPILE_PDB = CMakeFiles\SPACE_INVADER.dir\
-  TARGET_PDB = bin\SPACE_INVADER.pdb
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target SPACE_INVADER
-
-
-#############################################
-# Link the executable bin\SPACE_INVADER.exe
-
-build bin\SPACE_INVADER.exe: CXX_EXECUTABLE_LINKER__SPACE_INVADER_Debug CMakeFiles\SPACE_INVADER.dir\space_invader\main.cpp.obj | lib\sfml\lib\sfml-graphics-d.lib lib\sfml\lib\sfml-window-d.lib lib\sfml\lib\sfml-system-d.lib || bin\sfml-graphics-d-2.dll bin\sfml-system-d-2.dll bin\sfml-window-d-2.dll
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = lib\sfml\lib\sfml-graphics-d.lib  lib\sfml\lib\sfml-window-d.lib  lib\sfml\lib\sfml-system-d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  LINK_PATH = -LIBPATH:C:\Users\Vv\DOCUME~1\GitHub\YEAR3_~1\out\build\X64-DE~1\lib\sfml\lib
-  OBJECT_DIR = CMakeFiles\SPACE_INVADER.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\SPACE_INVADER.dir\
-  TARGET_FILE = bin\SPACE_INVADER.exe
-  TARGET_IMPLIB = SPACE_INVADER.lib
-  TARGET_PDB = bin\SPACE_INVADER.pdb
 
 
 #############################################
@@ -1760,13 +1760,13 @@ build lib\sfml\src\SFML\Audio\list_install_components: phony
 # =============================================================================
 # Target aliases.
 
+build 2_INVADERS: phony bin\2_INVADERS.exe
+
+build 2_INVADERS.exe: phony bin\2_INVADERS.exe
+
 build PRACTICAL_1: phony bin\PRACTICAL_1.exe
 
 build PRACTICAL_1.exe: phony bin\PRACTICAL_1.exe
-
-build SPACE_INVADER: phony bin\SPACE_INVADER.exe
-
-build SPACE_INVADER.exe: phony bin\SPACE_INVADER.exe
 
 build sfml-audio: phony bin\sfml-audio-d-2.dll
 
@@ -1800,7 +1800,7 @@ build sfml-window-d-2.dll: phony bin\sfml-window-d-2.dll
 #############################################
 # Folder: C:/Users/Vv/Documents/GitHub/year3_game/out/build/x64-Debug (default)
 
-build all: phony bin\PRACTICAL_1.exe bin\SPACE_INVADER.exe lib\sfml\all
+build all: phony bin\2_INVADERS.exe bin\PRACTICAL_1.exe lib\sfml\all
 
 # =============================================================================
 

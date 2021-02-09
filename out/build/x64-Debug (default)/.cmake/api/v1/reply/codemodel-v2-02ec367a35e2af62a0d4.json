@@ -197,16 +197,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "PRACTICAL_1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PRACTICAL_1-Debug-3a995f917719347ff457.json",
-					"name" : "PRACTICAL_1",
+					"id" : "2_INVADERS::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2_INVADERS-Debug-c0900a46ac5a6d39a080.json",
+					"name" : "2_INVADERS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "SPACE_INVADER::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SPACE_INVADER-Debug-31c4dac0149f3369be8a.json",
-					"name" : "SPACE_INVADER",
+					"id" : "PRACTICAL_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PRACTICAL_1-Debug-852201c9a3b6b664fa2c.json",
+					"name" : "PRACTICAL_1",
 					"projectIndex" : 0
 				},
 				{
