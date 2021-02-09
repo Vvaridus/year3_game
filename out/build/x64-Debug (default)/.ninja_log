@@ -119,3 +119,6 @@
 8949	9288	634573489	lib/sfml/lib/sfml-audio-d.lib	931b637c92985899
 3	446	634574214	CMakeFiles/PRACTICAL_1.dir/space_invader/main.cpp.obj	2d9e6e185cdd78bb
 446	586	634574214	bin/PRACTICAL_1.exe	bce5187a48ca3ea1
+6	450	634574569	CMakeFiles/PRACTICAL_1.dir/space_invader/main.cpp.obj	2d9e6e185cdd78bb
+3	454	634574569	CMakeFiles/SPACE_INVADER.dir/space_invader/main.cpp.obj	7d433f835d7b4b03
+455	685	634574569	bin/SPACE_INVADER.exe	77a39b3401bdb7b9

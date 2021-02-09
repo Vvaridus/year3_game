@@ -1,4 +1,5 @@
 C:/Users/Vv/Documents/GitHub/year3_game/out/build/x64-Debug (default)/CMakeFiles/PRACTICAL_1.dir
+C:/Users/Vv/Documents/GitHub/year3_game/out/build/x64-Debug (default)/CMakeFiles/SPACE_INVADER.dir
 C:/Users/Vv/Documents/GitHub/year3_game/out/build/x64-Debug (default)/CMakeFiles/install/local.dir
 C:/Users/Vv/Documents/GitHub/year3_game/out/build/x64-Debug (default)/CMakeFiles/install.dir
 C:/Users/Vv/Documents/GitHub/year3_game/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
