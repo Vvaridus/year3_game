@@ -196,7 +196,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PRACTICAL_1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PRACTICAL_1-Debug-86fb63facb3374947151.json",
+					"jsonFile" : "target-PRACTICAL_1-Debug-3a995f917719347ff457.json",
 					"name" : "PRACTICAL_1",
 					"projectIndex" : 0
 				},
@@ -210,7 +210,7 @@
 				{
 					"directoryIndex" : 7,
 					"id" : "sfml-graphics::@8f027e26a9c49a14a54c",
-					"jsonFile" : "target-sfml-graphics-Debug-ca4f208e5d4f889740c4.json",
+					"jsonFile" : "target-sfml-graphics-Debug-648e4da5c1bd19a7dcff.json",
 					"name" : "sfml-graphics",
 					"projectIndex" : 1
 				},

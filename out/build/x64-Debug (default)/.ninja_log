@@ -117,3 +117,5 @@
 8236	8949	634573489	lib/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.obj	f09dce86e349e1de
 8949	9288	634573489	bin/sfml-audio-d-2.dll	931b637c92985899
 8949	9288	634573489	lib/sfml/lib/sfml-audio-d.lib	931b637c92985899
+3	446	634574214	CMakeFiles/PRACTICAL_1.dir/space_invader/main.cpp.obj	2d9e6e185cdd78bb
+446	586	634574214	bin/PRACTICAL_1.exe	bce5187a48ca3ea1
